@@ -11,7 +11,11 @@ open class Vehiculo(
         require(modelo.isNotBlank()){"El modelo no puede estar en blanco"}
     }
     override fun toString(): String {
-        return ""
+        return "Este vehiculo es de la marca: $marca, un modelo:$modelo, con una capacidad del combustible de $capacidadCombustible litros, " +
+                "que posee ahora unos $combustibleActual litros y con $kilometrosActuales km actuales."
+    }
+    fun obtenerInformacion():String{
+        return calcularAutonomia().toString()
     }
     fun calcularAutonomia():Int{
         return (10 * combustibleActual).toInt()

@@ -6,4 +6,5 @@ class Motocicleta(
     val kilometrosActuales:Int,
     var cilindrada:Int
 ):Vehiculo(marca, modelo, capacidadCombustible, combustibleActual, kilometrosActuales)  {
+
 }
