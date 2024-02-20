@@ -5,6 +5,6 @@ class Motocicleta(
     var combustibleActual:Float,
     val kilometrosActuales:Int,
     var cilindrada:Int
-):Vehiculo(marca, modelo, capacidadCombustible, combustibleActual, kilometrosActuales)  {
+    ):Vehiculo(marca, modelo, capacidadCombustible, combustibleActual, kilometrosActuales)  {
 
 }
