@@ -43,5 +43,5 @@
 *realizaCaballito()-> Float: realización de un gasto adicional en el combustible, retornando el combustible. El gasto equivale a un 6,5 kilómetros.
 */
 fun main() {
-    println("Hello World!")
+
 }
