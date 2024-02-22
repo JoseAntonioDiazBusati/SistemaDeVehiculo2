@@ -13,7 +13,7 @@ open class Vehiculo(
                 "que posee ahora unos $combustibleActual litros y con $kilometrosActuales km actuales."
     }
     open fun obtenerInformacion():String{
-        return calcularAutonomia().toString()
+        return toString()
     }
     open fun calcularAutonomia():Float{
         return (KM_POR_LITRO * combustibleActual)

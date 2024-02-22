@@ -4,8 +4,19 @@ class Motocicleta(
     override val capacidadCombustible:Float,
     override var combustibleActual:Float,
     override var kilometrosActuales:Float,
-    var cilindrada:IntRange=125..1000
+    var cilindrada:Int
     ):Vehiculo(marca, modelo, capacidadCombustible, combustibleActual, kilometrosActuales)  {
+        fun confirmarCilindrada():String{
+            if (cilindrada<125){
+                return "No puede ser menor que 125"
+            }
+            if (cilindrada>1000){
+                return "No puede ser mayor que 1000"
+            }
+            else{
+                return cilindrada.toString()
+            }
+        }
     override fun calcularAutonomia(): Float {
         val autonomiaBase = super.calcularAutonomia()
         val autonomiaCilindrada = autonomiaBase - (cilindrada /1000f)
