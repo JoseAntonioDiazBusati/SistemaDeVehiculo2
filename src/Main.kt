@@ -43,5 +43,12 @@
 *realizaCaballito()-> Float: realización de un gasto adicional en el combustible, retornando el combustible. El gasto equivale a un 6,5 kilómetros.
 */
 fun main() {
+    val vehiculo = Vehiculo("Toyota", "Corola", 50f, 20f, 100f)
+    println(vehiculo.obtenerInformacion())
 
+    val auto = Automovil("Ford", "Focus", 41f, 20f, 10450f, true, true)
+    println("Autonomía del auto: ${(auto.calcularAutonomia())} km")
+
+    val moto = Motocicleta("Honda", "Sis", 20f, 12f, 17404f, 800)
+    println("Autonomía de la moto: ${(moto.calcularAutonomia())} km")
 }
