@@ -1,12 +1,13 @@
 class Automovil(
-    override val marca:String,
-    override val modelo:String,
-    override val capacidadCombustible:Float,
-    override var combustibleActual:Float,
-    override var kilometrosActuales:Float,
+     nombre: String,
+     marca:String,
+     modelo:String,
+    capacidadCombustible:Float,
+     combustibleActual:Float,
+     kilometrosActuales:Float,
     var esHibrido:Boolean,
     var condicionBritanica:Boolean
-):Vehiculo(marca, modelo, capacidadCombustible, combustibleActual, kilometrosActuales) {
+):Vehiculo(nombre,marca, modelo, capacidadCombustible, combustibleActual, kilometrosActuales) {
     companion object {
         const val AHORRO_HIBRIDO = 5f
         var condicionBritanicaGlobal: Boolean = false

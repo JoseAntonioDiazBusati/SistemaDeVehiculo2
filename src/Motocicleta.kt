@@ -1,11 +1,12 @@
 class Motocicleta(
-    override val marca:String,
-    override val modelo:String,
-    override val capacidadCombustible:Float,
-    override var combustibleActual:Float,
-    override var kilometrosActuales:Float,
+     nombre: String,
+     marca:String,
+     modelo:String,
+     capacidadCombustible:Float,
+     combustibleActual:Float,
+     kilometrosActuales:Float,
     var cilindrada:Int
-    ):Vehiculo(marca, modelo, capacidadCombustible, combustibleActual, kilometrosActuales)  {
+    ):Vehiculo(nombre,marca, modelo, capacidadCombustible, combustibleActual, kilometrosActuales)  {
         fun confirmarCilindrada():String{
             if (cilindrada<125){
                 return "No puede ser menor que 125"
